@@ -1,5 +1,3 @@
 venv
 output
-tmp_img.jpg
-tmp_img.png
-tmp_img.bmp
+tmp_img.*
