@@ -37,6 +37,13 @@ def main():
         )
 
         st.image(qr_name)
+        with open(qr_name, "rb") as f:
+            btn = st.download_button(
+                label="Download QR Code",
+                data=f,
+                file_name="created_qr.png",
+                mime="image/png"
+            )
 
 
 if __name__ == "__main__":
