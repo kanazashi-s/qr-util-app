@@ -11,8 +11,9 @@ def save_image(image_file, img_name):
 
 
 def main():
+    st.title("QR Code Generator")
     input_url = st.text_input("Enter Target URL", "https://www.google.com/?hl=ja")
-    input_img = st.file_uploader("Upload Image (only jpg, png and bmp files are allowed.)", type=["jpg", "png", "bmp"])
+    input_img = st.file_uploader("Upload Base Image[jpg, png, bmp].", type=["jpg", "png", "bmp"])
     if input_url is not None:
         if input_img is not None:
             extension = input_img.name.split(".")[-1]
